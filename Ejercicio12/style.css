@@ -1,0 +1,118 @@
+   :root{
+        --background-color:#26272b; 
+        --letter-color: rgb(165, 165, 165);
+   }
+   
+   * {
+        margin: 0;
+        padding: 0;
+        font-size: 14qpx;
+    }
+    
+    body{
+        background-color: black;
+    }
+
+    nav{
+        display:flex;
+        background-color: var(--background-color);
+        height: 42px;
+        align-items: center;
+    }
+
+    .menu-hamburguer{
+        display:none;
+    }
+
+    nav > ul{
+        padding-left: 1px;
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        align-items: center;
+       
+    }
+    nav > ul > li{
+        margin: 0 10px;
+    }
+
+    nav a{
+        outline: none;
+        text-decoration: none;
+        color: white;
+    }
+
+    nav a:hover{
+            background-color: #dfdada2f;
+        }
+
+    .navbar > a{
+        font-size: 20px;
+        
+    }
+
+
+    .link a, .dropdown a{
+        color: var(--letter-color);
+    }
+    
+    .disable a{
+        color:  rgb(65, 64, 64);
+    }
+
+    .drop {
+        display: none;
+        list-style: none;
+    }
+
+    .dropdown:hover .drop{
+        display: block;
+        padding-top:60px;
+        background-color:var(--background-color);
+        height: 50px;
+    }
+
+    .opcion2{
+        margin-top:10px;
+
+    }
+    
+   
+
+    .search{
+        margin-left: 25px;
+        
+    }
+
+    
+
+    #search-engine{
+        border: 0.5px solid black;
+        height: 28px;
+        width: 150px;
+    }
+    #search-engine-button{
+        background-color: rgba(255, 255, 255, 0);
+        color: green;
+        border: 1px solid green;
+        height: 28px;
+        width: 8ch;
+    }
+
+    #search-engine-button:hover{
+        background-color: green;
+        color: white;
+    }
+
+    #search-engine, #search-engine-button{
+        border-radius: 5px;   
+    }
+
+    @media screen and (max-width: 768px){
+        .menu-hamburguer{
+            display:flex;
+        }
+        .navbar, .home, .link, .dropdown, .disable, .search{
+            display: none;
+        }
+    }
