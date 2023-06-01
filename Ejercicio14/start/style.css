@@ -7,6 +7,8 @@
 *{
     padding: 0;
     margin: 0;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 
@@ -16,7 +18,7 @@
     height: 300px;
     display:grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4 1fr);
+    grid-template-rows: repeat(6 1fr);
     grid-template-areas: "resultado resultado resultado resultado"
                          "suma resta multiplicacion division"
                          "siete ocho nueve igual"
@@ -43,8 +45,13 @@
     justify-content: flex-end;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-
 }
+
+#resultado > p {
+    font-size: 30px
+}
+
+
 
 #suma, #resta, #multiplicacion, #division{
     background-color: var(--operation-color);
@@ -125,7 +132,7 @@
     border-bottom-right-radius: 5px;
 }
 
-/*Quitando bordes exteriores*/
+/*Quitando bordes exteriores*/ 
 #resultado, #division, #igual{
     border-right: 0px;
 }
